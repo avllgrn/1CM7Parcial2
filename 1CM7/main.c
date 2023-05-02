@@ -1,23 +1,16 @@
 #include <stdio.h>
-#include "misFunciones.h"
-
 
 int main(void){
+    int a, b;
+    printf("Ingresa a ");scanf("%d",&a);
+    printf("Ingresa b ");scanf("%d",&b);
 
-    switch( muestraMenuPideOpcion() ){
-        case 1:
-            calculaSenoVacia();
-            break;
-        case 2:
-            calculaCosenoVacia();
-            break;
-        case 3:
-            calculaTangenteVacia();
-            break;
-        default:
-            printf("Opcion invalida =^(");
-            break;
-    }
+    printf("%d <  %d = %d\n",a,b,a<b);
+    printf("%d <= %d = %d\n",a,b,a<=b);
+    printf("%d >  %d = %d\n",a,b,a>b);
+    printf("%d >= %d = %d\n",a,b,a>=b);
+    printf("%d != %d = %d\n",a,b,a!=b);
+    printf("%d == %d = %d\n",a,b,a==b);
 
     return 0;
 }
